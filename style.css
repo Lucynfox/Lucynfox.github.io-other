@@ -9,12 +9,14 @@ body {
 
 .navbar {
   	background: #333333;
+	height: 50px;
 }
 
 .nav_items {
   	display: flex;
   	justify-content: space-between;
-  	padding: 10px;
+	align-items:center;
+  	padding: 15px;
 	width: 50%;
 	margin:0% 25%;
 }
@@ -27,10 +29,29 @@ a {
 .home_page_container {
 	margin: 10% 10%;
 	width: 75%;
+	background-image: "images/potential_homepage-img.jpeg";
+}
+
+.background_image { 
+  background: url(images/homepage_img.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1000px;
 }
 
 .name{
 	font-size: 50px;
+	color: white;
+}
+
+.button_details {
+	font-size: 40px;
+	background: grey;
+	color: white;
+	border-radius: 25px;
+	padding: 0px 20px;
 }
 
 
@@ -42,14 +63,33 @@ a {
 }
 
 .projects {
-	width:75%;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	display: grid;
-	margin: 40px 0px;
+	margin: 50px 0px;
 }
 
 .projects_divs {
 	margin: 0px 0px 0px 60px;
+}
+
+.icon_details {
+	font-size: 1.75rem;
+}
+.fa-github {
+	font-size: 2rem;
+}
+
+.fa-external-link-alt {
+	font-size: 1.75rem;
+}
+
+.projects_icons {
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+}
+
+.projects_img {
+	border-radius: 20px;
 }
 
 /*About Me Section*/
@@ -61,8 +101,9 @@ a {
 
 .about_me_elements {
 	width:75%;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	display: grid;
+	margin: 10% 20%;
 }
 
 .about_me_paragraph {
@@ -71,3 +112,12 @@ a {
 
 
 /* Contact Me Section*/
+.social-button {
+	width: 40px;
+	height: 40px;
+	font-size: 5rem;
+}
+
+.fa-github-contact-me {
+	font-size: 5rem;
+}
