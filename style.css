@@ -144,7 +144,11 @@ p.about_me_paragraph {
 
 
 /*Footer Section*/
-.footer {
+/*.footer {
+	background: black;
+}*/
+
+footer {
 	background: black;
 }
 
