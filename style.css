@@ -29,41 +29,48 @@ a {
 	text-decoration: NONE;
 }
 
+
 /*Home Page*/
 .home_page_container {
 	margin: 10% 10%;
-	width: 75%;
-	background-image: "images/potential_homepage-img.jpeg";
 }
 
-.background_image { 
-  background: url(images/homepage_img.jpg) no-repeat center center fixed; 
+.background_image {
+  background: url(images/homepage_img.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1000px;
+  position:absolute;
+  top:50px;
+  bottom: 0px;
+  right:0px;
+  left:0px;
 }
 
-.name{
+.name {
 	font-size: 50px;
 	color: white;
+	font-family: 'Charmonman', cursive;
 }
 
 .button_details {
-	font-size: 40px;
+	font-size: 2.5rem;
 	background: grey;
 	color: white;
 	border-radius: 25px;
 	padding: 0px 20px;
 }
 
+.php_button_details {
+	display:none;
+}
 
 
 /*Projects Page*/
 
 .projects_container {
-	margin:100px;
+	margin: 5% 10%;
 }
 
 .projects {
@@ -94,84 +101,181 @@ a {
 
 .projects_img {
 	border-radius: 20px;
+	width: 100%;
+}
+
+.projects_paragraph_text {
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*About Me Section*/
-
+p.about_me_paragraph {
+	font-family: 'Montserrat', sans-serif;
+}
 
 .about_me_container {
 	margin: 10% 10%;
 }
 
 .about_me_elements {
-	width:90%;
 	grid-template-columns: 2fr 1fr;
 	display: grid;
 }
 
 .about_me_paragraphs {
 	padding: 0px 20px 0px 0px;
+	font-size: 1.1rem;
 }
 .about_me_paragraph {
 	margin: 0px 60px 0px 0px;
 }
 
+.about_me_img_div {
+	width:450px;
+}
 .about_me_img {
-	width:500px;
+	width:100%;
 	border-radius:25px;
-	position: relative;
-	bottom: 125px;
-	left: 30px;
 }
 
-/* Contact Me Section*/
 
-.contact_me_container {
-	margin: 10% 10%;
+/*Footer Section*/
+.footer {
+	background: black;
+	color: white;
 }
 
-.contact_me_elements {
-	width:90%;
+.footer_about_me {
+	position:absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.contact_me_icons_footer {
+	margin: 15px;
 	grid-template-columns: 1fr 1fr 1fr;
 	display: grid;
-}
-.social-button {
-	width: 40px;
-	height: 40px;
-	font-size: 5rem;
-}
-
-.fa-github-contact-me {
-	font-size: 5rem;
+	text-align:center;
 }
 
 .contact_me_github {
 	color: white;
-	font-size: 5rem;
+	font-size: 2rem;
 }
 
-@media only screen and (max-width: 767.98px) {
-  .about_me_container {
-    text-align: center; 
-	display: grid;
+.social-button {
+	width: 40px;
+	height: 40px;
+	font-size: 2rem;
+}
+
+.contact_me_elements {
+	width:90%;
 	grid-template-rows: 1fr 1fr 1fr;
+	display: grid;
 }
- 
 
+.php_img {
+	display:none;
+}
+
+
+@media only screen and (max-width: 1300px) {
+.name {
+		font-size: 2rem;
+	}
+.home_page_container {
+	margin: 20% 10%;
+}
+
+.button_details {
+	font-size: 2rem;
+}
+	
+}
+
+@media only screen and (max-width: 1200px) {
+.footer_about_me {
+	position:static;
+}
+	
+.about_me_container {
+  	display:flex;
+  	flex-direction: column;
+  }
+.about_me_elements {
+  	display:flex;
+  	flex-direction: column;
+  }
+
+.about_me_img_div {
+  	order: 2;
+  	width: 50%;
+  }
+
+.about_me_paragraphs {
+  	order: 3;
+  	padding: 30px 0px 0px 0px;
+  }
+.projects_container {
+  	display: flex;
+  	flex-direction: column;	
+  }
+	
+.projects_divs {
+  	margin: auto;
+  }
+	
+.projects {
+  	display: flex;
+  	flex-direction: column;
+  }
+	
+.projects_img {
+  	width: 50%;
+  }
+	
+}
 
 @media only screen and (max-width: 800px) {
-	
+
+.php_img {
+	display:block;
+	width: 100%;
 }
 
-@media only screen and (min-width: 800px) {
-	
+.background_image {
+	background: none;
 }
 
-/*
-body{
-	display: flex;
-justify-content: center;
-font-family: 'Merriweather', serif;
-margin: 0px;
-color: #40514E;
-}*/
+.home_page_container {
+	margin: 0px;
+	position: absolute;
+	top: 200px;
+	right: 10px;
+}
+
+.button_details {
+	font-size: 1rem;
+}
+
+.name {
+	font-size: 1rem;
+}
+
+}
+
+@media only screen and (max-width: 570px) {
+.home_page_container {
+	position:static;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.nav_items {
+	font-size:small;
+}
+}
+	
+
+
