@@ -90,6 +90,7 @@ h1 {
 }
 .fa-github {
 	font-size: 2rem;
+	color: #000000;
 }
 
 .fa-external-link-alt {
@@ -99,6 +100,10 @@ h1 {
 .projects_icons {
 	grid-template-columns: 1fr 1fr;
 	display: grid;
+}
+
+.project_icon {
+	color: #000000;
 }
 
 .projects_img {
@@ -127,12 +132,8 @@ p.about_me_paragraph {
 	margin: 0px 60px 0px 0px;
 }
 
-.about_me_img_div {
-	width: 120%;
-}
 .about_me_img {
 	width: 100%;
-	border-radius: 25px;
 }
 
 footer {
